@@ -22,7 +22,7 @@
     <vertx.version>4.4.1</vertx.version>
     <junit-jupiter.version>5.9.1</junit-jupiter.version>
 
-    <main.verticle>top.yonyong.vertx.demo.verticles.http.MainVerticle</main.verticle>
+    <main.verticle>top.yonyong.vertx.demo.verticles.http.HttpVerticle</main.verticle>
     <launcher.class>io.vertx.core.Launcher</launcher.class>
   </properties>
 
