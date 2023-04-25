@@ -6,7 +6,7 @@ import io.vertx.junit5.VertxTestContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import top.yonyong.vertx.demo.http.MainVerticle;
+import top.yonyong.vertx.demo.verticles.http.MainVerticle;
 
 @ExtendWith(VertxExtension.class)
 public class TestMainVerticle {

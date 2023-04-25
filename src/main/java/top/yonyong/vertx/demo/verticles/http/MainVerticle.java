@@ -1,4 +1,4 @@
-package top.yonyong.vertx.demo.http;
+package top.yonyong.vertx.demo.verticles.http;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
@@ -17,6 +17,12 @@ public class MainVerticle extends AbstractVerticle {
       .requestHandler(router)
       .listen(8080)
       .onSuccess(this::onSuccessHandler);
+    System.out.println("start ...");
+  }
+
+  @Override
+  public void stop() throws Exception {
+    System.out.println("stop ...");
   }
 
   private void testHandler(RoutingContext context) {
