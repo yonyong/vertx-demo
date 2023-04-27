@@ -18,7 +18,7 @@ public class Application {
   private static void way1() {
     Vertx vertx = Vertx.vertx();
     vertx.deployVerticle(new HttpVerticle());
-    vertx.deployVerticle(new ServiceVerticle(), new DeploymentOptions()
+    vertx.deployVerticle(new ServiceVerticle(), new DeploymentOptions().setWorker(true)
       .setWorkerPoolName("work-pool")
       .setMaxWorkerExecuteTime(120000)
       .setWorkerPoolSize(5));

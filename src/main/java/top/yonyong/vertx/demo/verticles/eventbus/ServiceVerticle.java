@@ -16,6 +16,11 @@ public class ServiceVerticle extends AbstractVerticle {
 
   private <T> void handleEventBus(Message<T> tMessage) {
     System.out.println("接收到消息：" + tMessage.body());
+//    try {
+//      Thread.sleep(4000);
+//    } catch (InterruptedException e) {
+//      e.printStackTrace();
+//    }
     tMessage.reply("accept:" + tMessage.body());
   }
 
